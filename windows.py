@@ -74,10 +74,6 @@ class LoginWindow:
 # Begin two-factor authentication here
 class TwoFactorWindow:
     def __init__(self, username):
-        # test_email = "cassette013@gmail.com"
-        # test_password = "ABcd1234!"
-
-        # user_email = data[username]['Email']
 
         key = "MySuperSecretKey"
         self.totp = pyotp.TOTP(key)
